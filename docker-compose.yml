@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    php:
+        container_name: currency_converter_php
+        build:
+            context: ./docker
+            dockerfile: Dockerfile
+        tty: true
+        volumes:
+            - .:/usr/app/
